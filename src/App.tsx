@@ -4,9 +4,10 @@ import { Sidebar } from './components/layout/Sidebar'
 import { Dashboard } from './components/pages/Dashboard'
 import { MeetingRecorder } from './components/pages/MeetingRecorder'
 import { Meetings } from './components/pages/Meetings'
+import { TeamsPlugin } from './components/pages/TeamsPlugin'
 import { Toaster } from './components/ui/toaster'
 
-type Page = 'dashboard' | 'meetings' | 'recorder' | 'transcripts' | 'analytics' | 'team' | 'settings'
+type Page = 'dashboard' | 'meetings' | 'recorder' | 'teams-plugin' | 'transcripts' | 'analytics' | 'team' | 'settings'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -105,6 +106,8 @@ function App() {
         return <Meetings />
       case 'recorder':
         return <MeetingRecorder />
+      case 'teams-plugin':
+        return <TeamsPlugin />
       default:
         return <Dashboard />
     }

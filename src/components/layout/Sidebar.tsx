@@ -6,7 +6,8 @@ import {
   BarChart3, 
   Users, 
   Settings,
-  LogOut
+  LogOut,
+  Zap
 } from 'lucide-react'
 import { blink } from '../../blink/client'
 
@@ -20,6 +21,7 @@ const navigation = [
   { id: 'dashboard', name: 'Dashboard', icon: LayoutDashboard },
   { id: 'meetings', name: 'Meetings', icon: Calendar },
   { id: 'recorder', name: 'Record', icon: Mic },
+  { id: 'teams-plugin', name: 'Teams Plugin', icon: Zap },
   { id: 'transcripts', name: 'Transcripts', icon: FileText },
   { id: 'analytics', name: 'Analytics', icon: BarChart3 },
   { id: 'team', name: 'Team', icon: Users },
